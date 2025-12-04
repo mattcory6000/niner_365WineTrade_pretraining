@@ -1,0 +1,413 @@
+/* 365WineTrade QuickStart Guide Custom Styles */
+/* Updated to match Western Computer/365WineTrade branding */
+
+:root {
+  --wine-primary: #5B2C6F;        /* Deep purple - professional wine industry */
+  --wine-secondary: #7B3F8F;      /* Lighter purple accent */
+  --wine-light: #F5F3F7;          /* Very light purple/grey background */
+  --wine-gold: #C19A6B;           /* Muted gold accent */
+  --accent-blue: #4A90E2;         /* Blue accent for links/actions */
+  --text-dark: #2c3e50;           /* Dark text */
+  --text-medium: #6c757d;         /* Medium grey text */
+  --border-color: #dee2e6;        /* Light border */
+  --success-green: #28a745;       /* Success/complete states */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+/* Header */
+.site-header {
+  background: linear-gradient(135deg, var(--wine-primary) 0%, var(--wine-secondary) 100%);
+  color: white;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.site-header .header-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.site-header .logo-container {
+  flex-shrink: 0;
+}
+
+.site-header .logo-container img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+.site-header .title-container {
+  flex-grow: 1;
+}
+
+.site-header h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.site-header .subtitle {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .site-header .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .site-header .logo-container img {
+    height: 50px;
+  }
+
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Navigation */
+.sidebar {
+  background-color: #f8f9fa;
+  border-right: 1px solid var(--border-color);
+  height: calc(100vh - 140px);
+  overflow-y: auto;
+  position: sticky;
+  top: 140px;
+}
+
+.sidebar .nav-link {
+  color: var(--text-dark);
+  padding: 0.75rem 1.25rem;
+  border-left: 3px solid transparent;
+  transition: all 0.2s;
+}
+
+.sidebar .nav-link:hover {
+  background-color: var(--wine-light);
+  border-left-color: var(--wine-secondary);
+  text-decoration: none;
+}
+
+.sidebar .nav-link.active {
+  background-color: var(--wine-light);
+  border-left-color: var(--wine-primary);
+  font-weight: 600;
+  color: var(--wine-primary);
+}
+
+.sidebar .nav-section-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #6c757d;
+  padding: 1rem 1.25rem 0.5rem;
+  margin-top: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.sidebar .nav-link.indent-1 {
+  padding-left: 2rem;
+  font-size: 0.95rem;
+}
+
+.sidebar .nav-link.indent-2 {
+  padding-left: 2.75rem;
+  font-size: 0.9rem;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background-color: white;
+  padding: 1rem 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.breadcrumb-item.active {
+  color: var(--wine-primary);
+}
+
+.breadcrumb-item a {
+  color: var(--wine-secondary);
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  color: var(--wine-primary);
+  text-decoration: underline;
+}
+
+/* Content Area */
+.content-area {
+  padding: 2rem 0;
+}
+
+.content-area h1 {
+  color: var(--wine-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid var(--wine-gold);
+  padding-bottom: 0.5rem;
+}
+
+.content-area h2 {
+  color: var(--wine-primary);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--wine-light);
+  padding-bottom: 0.5rem;
+}
+
+.content-area h3 {
+  color: var(--wine-secondary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content-area h4 {
+  color: var(--text-dark);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Wine Callout */
+.wine-callout {
+  background-color: #fff9f0;
+  border-left: 4px solid var(--wine-gold);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.wine-callout-title {
+  font-weight: 700;
+  color: var(--wine-primary);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wine-callout-title::before {
+  content: "🍷";
+  font-size: 1.25rem;
+}
+
+/* Module Card */
+.module-card {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.module-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+.module-card h3 {
+  margin-top: 0;
+}
+
+.module-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.module-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.module-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--wine-primary);
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.module-link:hover {
+  background-color: var(--wine-secondary);
+  text-decoration: none;
+}
+
+/* Alert Boxes */
+.alert-info {
+  background-color: #e7f3ff;
+  border-color: #b8daff;
+  color: #004085;
+}
+
+.alert-warning {
+  background-color: #fff9f0;
+  border-color: var(--wine-gold);
+  color: #856404;
+}
+
+/* Tables */
+.table {
+  margin: 1.5rem 0;
+}
+
+.table thead th {
+  background-color: var(--wine-primary);
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: var(--wine-light);
+}
+
+/* Code blocks */
+code {
+  background-color: #f8f9fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  color: var(--wine-primary);
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border-left: 3px solid var(--wine-primary);
+}
+
+/* Navigation Buttons */
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border-color);
+}
+
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--wine-primary);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: var(--wine-secondary);
+  text-decoration: none;
+}
+
+.nav-btn.prev::before {
+  content: "←";
+}
+
+.nav-btn.next::after {
+  content: "→";
+}
+
+.nav-btn-placeholder {
+  width: 100px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid var(--border-color);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Checklist */
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.checklist li::before {
+  content: "☐";
+  font-size: 1.25rem;
+  color: var(--wine-primary);
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .content-area h1 {
+    font-size: 1.75rem;
+  }
+
+  .page-navigation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .site-header,
+  .sidebar,
+  .breadcrumb,
+  .page-navigation,
+  .site-footer {
+    display: none;
+  }
+
+  .content-area {
+    padding: 0;
+  }
+}
