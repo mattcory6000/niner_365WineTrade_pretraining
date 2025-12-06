@@ -1,260 +1,353 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Finance Role Track - 365WineTrade QuickStart Guide</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"/>
-<link href="assets/css/custom.css" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Finance Role Track - 365WineTrade QuickStart Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
 </head>
+
 <body>
-<header class="site-header">
-<div class="container">
-<h1>Business Central QuickStart Guide for Niner Wine Estates</h1>
-<p class="subtitle">Curated for Niner by 365WineTrade</p>
-</div>
-</header>
-<nav aria-label="breadcrumb">
-<div class="container">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-<li class="breadcrumb-item">Role-Specific</li>
-<li aria-current="page" class="breadcrumb-item active">Finance</li>
-</ol>
-</div>
-</nav>
-<div class="container">
-<div class="row">
-<nav class="col-md-3 col-lg-2 sidebar">
-<div class="nav flex-column">
-<a class="nav-link" href="index.html">Home</a>
-<div class="nav-section-title">Learning Path</div>
-<a class="nav-link" href="round1-getting-started.html">Round I: Getting Started</a>
-<a class="nav-link" href="round2-core-skills.html">Round II: Core Skills</a>
-<a class="nav-link" href="round3-foundational.html">Round III: Foundational</a>
-<a class="nav-link" href="role-admin.html">Admin &amp; Leadership</a>
-<a class="nav-link active" href="role-finance.html">Finance</a>
-<a class="nav-link" href="role-trade.html">Trade/Sales</a>
-<a class="nav-link" href="role-warehouse.html">Warehouse</a>
-<a class="nav-link" href="role-powerbi.html">Power BI</a>
-<div class="nav-section-title">Reference</div>
-<a class="nav-link" href="quick-reference.html">Quick Reference</a>
-<a class="nav-link" href="moving-to-365winetrade.html">Moving to 365WineTrade</a>
-<a class="nav-link" href="appendix.html">Appendix</a>
-</div>
-</nav>
-<main class="col-md-9 col-lg-10 content-area">
-<h1><i class="bi bi-calculator"></i> Finance Role Track</h1>
-<p class="lead">Master financial management including chart of accounts, dimensions, journals, and
+    <header class="site-header">
+        <div class="container">
+            <h1>Business Central QuickStart Guide for Niner Wine Estates</h1>
+            <p class="subtitle">Curated for Niner by 365WineTrade</p>
+        </div>
+    </header>
+    <nav aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item">Role-Specific</li>
+                <li aria-current="page" class="breadcrumb-item active">Finance</li>
+            </ol>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 sidebar">
+                <div class="nav flex-column">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <div class="nav-section-title">Learning Path</div>
+                    <a class="nav-link" href="round1-getting-started.html">Round I: Getting Started</a>
+                    <a class="nav-link" href="round2-core-skills.html">Round II: Core Skills</a>
+                    <a class="nav-link" href="round3-foundational.html">Round III: Foundational</a>
+                    <a class="nav-link" href="role-admin.html">Admin &amp; Leadership</a>
+                    <a class="nav-link active" href="role-finance.html">Finance</a>
+                    <a class="nav-link" href="role-trade.html">Trade/Sales</a>
+                    <a class="nav-link" href="role-warehouse.html">Warehouse</a>
+                    <a class="nav-link" href="role-powerbi.html">Power BI</a>
+                    <div class="nav-section-title">Reference</div>
+                    <a class="nav-link" href="quick-reference.html">Quick Reference</a>
+                    <a class="nav-link" href="appendix.html">Appendix</a>
+                </div>
+            </nav>
+            <main class="col-md-9 col-lg-10 content-area">
+                <h1><i class="bi bi-calculator"></i> Finance Role Track</h1>
+                <p class="lead">Master financial management including chart of accounts, dimensions, journals, and
                     reconciliations. These modules are essential for accountants, controllers, and finance managers
                     working in the wine industry.</p>
-<div class="alert alert-primary">
-<strong><i class="bi bi-lightbulb-fill"></i> Before You Start:</strong> Complete Rounds I-III first
+                <div class="alert alert-primary">
+                    <strong><i class="bi bi-lightbulb-fill"></i> Before You Start:</strong> Complete Rounds I-III first
                     to build your foundation in Business Central basics. Finance modules build on core navigation and
                     data entry skills.
                 </div>
-<h2>Module 1: Configure the Chart of Accounts</h2>
-<div class="module-card">
-<h3>Setting Up Your GL Structure</h3>
-<div class="module-meta">
-<div class="module-meta-item">
-<i class="bi bi-clock"></i>
-<span>1 hour</span>
-</div>
-<div class="module-meta-item">
-<i class="bi bi-star-fill" style="color: #ffc107;"></i>
-<span>Critical for Finance</span>
-</div>
-</div>
-<h4>What you'll learn:</h4>
-<ul>
-<li>Understanding the chart of accounts structure</li>
-<li>Creating and modifying GL accounts</li>
-<li>Account categories and subcategories</li>
-<li>Direct posting vs. totaling accounts</li>
-</ul>
-<a class="btn btn-sm btn-primary" href="https://learn.microsoft.com/en-us/training/modules/chart-accounts-dynamics-365-business-central/" target="_blank">Start Module</a>
-</div>
+                <h2>Module 1: Configure the Chart of Accounts</h2>
+                <div class="module-card">
+                    <h3>Setting Up Your GL Structure</h3>
+                    <div class="module-meta">
+                        <div class="module-meta-item">
+                            <i class="bi bi-clock"></i>
+                            <span>1 hour</span>
+                        </div>
+                        <div class="module-meta-item">
+                            <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                            <span>Critical for Finance</span>
+                        </div>
+                    </div>
+                    <h4>What you'll learn:</h4>
+                    <ul>
+                        <li>Understanding the chart of accounts structure</li>
+                        <li>Creating and modifying GL accounts</li>
+                        <li>Account categories and subcategories</li>
+                        <li>Direct posting vs. totaling accounts</li>
+                    </ul>
+                    <a class="btn btn-sm btn-primary"
+                        href="https://learn.microsoft.com/en-us/training/modules/chart-accounts-dynamics-365-business-central/"
+                        target="_blank">Start Module</a>
+                </div>
+                <h2>Module 2: Set Up Financial Dimensions</h2>
+                <div class="module-card">
+                    <h3>Dimension-Based Reporting</h3>
+                    <div class="module-meta">
+                        <div class="module-meta-item">
+                            <i class="bi bi-clock"></i>
+                            <span>1 hour</span>
+                        </div>
+                        <div class="module-meta-item">
+                            <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                            <span>Critical for Finance</span>
+                        </div>
+                    </div>
+                    <h4>What you'll learn:</h4>
+                    <ul>
+                        <li>Understanding dimensions in Business Central</li>
+                        <li>Creating dimension values (departments, projects, regions)</li>
+                        <li>Setting up default dimensions</li>
+                        <li>Using dimensions for analysis and reporting</li>
+                    </ul>
+                    <a class="btn btn-sm btn-primary"
+                        href="https://learn.microsoft.com/en-us/training/modules/dimensions-dynamics-365-business-central/"
+                        target="_blank">Start Module</a>
+                </div>
+                <div class="wine-callout">
+                    <div class="wine-callout-title">📝 365WineTrade Notes: Wine Industry Dimensions</div>
+                    <p>365WineTrade offers unique dimension management for wine businesses:</p>
+                    <ul>
+                        <li>Dimension Synchronize - automatically sync dimension values with wine entities (Brands,
+                            Vintages, Labels, Varietals, Producers)</li>
+                        <li>Brand Dimensions - set default dimensions on Brands that flow to all items</li>
+                        <li>Producer Dimensions - set dimensions on Producers that flow to Brands and Items</li>
+                        <li>Dimension Group Codes - consolidate large chargeback credit memos by grouping transactions
+                            by dimensions</li>
+                    </ul>
+                    <p>When a new Vintage or Brand is created, the corresponding dimension value is automatically
+                        created - eliminating double-entry and ensuring consistency across financial reporting.</p>
+                </div>
 
-<h2>Module 2: Set Up Financial Dimensions</h2>
-<div class="module-card">
-<h3>Dimension-Based Reporting</h3>
-<div class="module-meta">
-<div class="module-meta-item">
-<i class="bi bi-clock"></i>
-<span>1 hour</span>
-</div>
-<div class="module-meta-item">
-<i class="bi bi-star-fill" style="color: #ffc107;"></i>
-<span>Critical for Finance</span>
-</div>
-</div>
-<h4>What you'll learn:</h4>
-<ul>
-<li>Understanding dimensions in Business Central</li>
-<li>Creating dimension values (departments, projects, regions)</li>
-<li>Setting up default dimensions</li>
-<li>Using dimensions for analysis and reporting</li>
-</ul>
-<a class="btn btn-sm btn-primary" href="https://learn.microsoft.com/en-us/training/modules/dimensions-dynamics-365-business-central/" target="_blank">Start Module</a>
-</div>
-
-<h2>Module 3: Configure Journal Templates</h2>
-<div class="module-card">
-<h3>General Journal Setup and Configuration</h3>
-<div class="module-meta">
-<div class="module-meta-item">
-<i class="bi bi-clock"></i>
-<span>45 minutes</span>
-</div>
-</div>
-<h4>What you'll learn:</h4>
-<ul>
-<li>Creating journal templates for different purposes</li>
-<li>Setting up journal batches</li>
-<li>Configuring posting number series</li>
-<li>Using recurring journals</li>
-</ul>
-<a class="btn btn-sm btn-primary" href="https://learn.microsoft.com/en-us/training/modules/general-journal-templates-dynamics-365-business-central/" target="_blank">Start Module</a>
-</div>
-<h2>Module 4: Set Up Posting Groups</h2>
-<div class="module-card">
-<h3>Automated GL Posting Configuration</h3>
-<div class="module-meta">
-<div class="module-meta-item">
-<i class="bi bi-clock"></i>
-<span>1 hour 30 minutes</span>
-</div>
-</div>
-<h4>What you'll learn:</h4>
-<ul>
-<li>Understanding posting groups (general, customer, vendor, inventory)</li>
-<li>Setting up general posting groups</li>
-<li>Configuring inventory posting groups</li>
-<li>Customer and vendor posting groups</li>
-</ul>
-<a class="btn btn-sm btn-primary" href="https://learn.microsoft.com/en-us/training/modules/posting-groups-dynamics-365-business-central/" target="_blank">Start Module</a>
-</div>
-<h2>Module 5: Process Payments</h2>
-<div class="module-card">
-<h3>Payment Processing and Application</h3>
-<div class="module-meta">
-<div class="module-meta-item">
-<i class="bi bi-clock"></i>
-<span>1 hour</span>
-</div>
-</div>
-<h4>What you'll learn:</h4>
-<ul>
-<li>Recording customer payments</li>
-<li>Applying payments to invoices</li>
-<li>Processing vendor payments</li>
-<li>Handling partial payments and discounts</li>
-</ul>
-<a class="btn btn-sm btn-primary" href="https://learn.microsoft.com/en-us/training/modules/enter-payments-dynamics-365-business-central/" target="_blank">Start Module</a>
-</div>
-<h2>Module 6: Perform Bank Reconciliation</h2>
-<div class="module-card">
-<h3>Bank Account Reconciliation</h3>
-<div class="module-meta">
-<div class="module-meta-item">
-<i class="bi bi-clock"></i>
-<span>1 hour</span>
-</div>
-<div class="module-meta-item">
-<i class="bi bi-star-fill" style="color: #ffc107;"></i>
-<span>Critical for Finance</span>
-</div>
-</div>
-<h4>What you'll learn:</h4>
-<ul>
-<li>Importing bank statements</li>
-<li>Matching transactions automatically</li>
-<li>Manually matching bank entries</li>
-<li>Posting bank reconciliations</li>
-</ul>
-<a class="btn btn-sm btn-primary" href="https://learn.microsoft.com/en-us/training/modules/bank-reconciliation-dynamics-365-business-central/" target="_blank">Start Module</a>
-</div>
-<h2>Module 7: Use General Ledger Allocations</h2>
-<div class="module-card">
-<h3>Automated Cost Allocation</h3>
-<div class="module-meta">
-<div class="module-meta-item">
-<i class="bi bi-clock"></i>
-<span>45 minutes</span>
-</div>
-</div>
-<h4>What you'll learn:</h4>
-<ul>
-<li>Setting up allocation accounts</li>
-<li>Creating allocation rules</li>
-<li>Distributing costs across dimensions</li>
-<li>Running allocation processes</li>
-</ul>
-<a class="btn btn-sm btn-primary" href="https://learn.microsoft.com/en-us/training/modules/general-ledger-allocations/" target="_blank">Start Module</a>
-</div>
-
-<h2>Finance Skills Checklist</h2>
-<p>After completing this track, you should be able to:</p>
-<ul class="checklist">
-<li>Navigate and maintain the chart of accounts</li>
-<li>Create and configure dimensions for reporting</li>
-<li>Set up and use journal templates for different transaction types</li>
-<li>Configure posting groups to automate GL entries</li>
-<li>Process customer payments and apply them to invoices</li>
-<li>Process vendor payments and manage payables</li>
-<li>Import and reconcile bank statements</li>
-<li>Set up and run allocation processes</li>
-<li>Understand how transactions flow through the GL</li>
-<li>Generate financial reports with dimension analysis</li>
-</ul>
-<h2>Next Steps for Finance Professionals</h2>
-<div class="row mt-4">
-<div class="col-md-6 mb-3">
-<div class="card h-100">
-<div class="card-body">
-<h5 class="card-title"><i class="bi bi-cart-fill"></i> Understand Trade Operations</h5>
-<p class="card-text">Learn how sales and purchasing transactions create the GL entries
+                <h2>Module 3: Configure Journal Templates</h2>
+                <div class="module-card">
+                    <h3>General Journal Setup and Configuration</h3>
+                    <div class="module-meta">
+                        <div class="module-meta-item">
+                            <i class="bi bi-clock"></i>
+                            <span>45 minutes</span>
+                        </div>
+                    </div>
+                    <h4>What you'll learn:</h4>
+                    <ul>
+                        <li>Creating journal templates for different purposes</li>
+                        <li>Setting up journal batches</li>
+                        <li>Configuring posting number series</li>
+                        <li>Using recurring journals</li>
+                    </ul>
+                    <a class="btn btn-sm btn-primary"
+                        href="https://learn.microsoft.com/en-us/training/modules/general-journal-templates-dynamics-365-business-central/"
+                        target="_blank">Start Module</a>
+                </div>
+                <h2>Module 4: Set Up Posting Groups</h2>
+                <div class="module-card">
+                    <h3>Automated GL Posting Configuration</h3>
+                    <div class="module-meta">
+                        <div class="module-meta-item">
+                            <i class="bi bi-clock"></i>
+                            <span>1 hour 30 minutes</span>
+                        </div>
+                    </div>
+                    <h4>What you'll learn:</h4>
+                    <ul>
+                        <li>Understanding posting groups (general, customer, vendor, inventory)</li>
+                        <li>Setting up general posting groups</li>
+                        <li>Configuring inventory posting groups</li>
+                        <li>Customer and vendor posting groups</li>
+                    </ul>
+                    <a class="btn btn-sm btn-primary"
+                        href="https://learn.microsoft.com/en-us/training/modules/posting-groups-dynamics-365-business-central/"
+                        target="_blank">Start Module</a>
+                </div>
+                <div class="wine-callout">
+                    <div class="wine-callout-title">📝 365WineTrade Notes: Wine Industry Posting</div>
+                    <p>365WineTrade adds specialized posting configurations for wine operations:</p>
+                    <ul>
+                        <li>Chargeback Posting Setup - defines GL accounts for Depletion Allowances, Bill Backs, and Bad
+                            Bottles by Gen. Bus./Gen. Prod. Posting Group combinations</li>
+                        <li>Vendor Posting Group Overrides - chargebacks can post to different GL accounts than regular
+                            purchases</li>
+                        <li>Payment Terms Overrides - chargebacks can use different payment terms than standard vendor
+                            transactions</li>
+                        <li>Case-Amount Rounding Precision - prevents rounding inconsistencies in case/bottle
+                            calculations</li>
+                    </ul>
+                    <p>These ensure wine-specific transactions (chargebacks, samples, allocations) post correctly to
+                        your GL.</p>
+                </div>
+                <h2>Module 5: Process Payments</h2>
+                <div class="module-card">
+                    <h3>Payment Processing and Application</h3>
+                    <div class="module-meta">
+                        <div class="module-meta-item">
+                            <i class="bi bi-clock"></i>
+                            <span>1 hour</span>
+                        </div>
+                    </div>
+                    <h4>What you'll learn:</h4>
+                    <ul>
+                        <li>Recording customer payments</li>
+                        <li>Applying payments to invoices</li>
+                        <li>Processing vendor payments</li>
+                        <li>Handling partial payments and discounts</li>
+                    </ul>
+                    <a class="btn btn-sm btn-primary"
+                        href="https://learn.microsoft.com/en-us/training/modules/enter-payments-dynamics-365-business-central/"
+                        target="_blank">Start Module</a>
+                </div>
+                <div class="wine-callout">
+                    <div class="wine-callout-title">📝 365WineTrade Notes: Collections & Credit Management</div>
+                    <p>365WineTrade enhances credit and collections with wine industry tools:</p>
+                    <ul>
+                        <li>Credit Classes - categorize customers by credit status with "On Hold" flags</li>
+                        <li>Credit Review Dashboard - customer-centric view showing all orders, balances, and credit
+                            status</li>
+                        <li>Historical Credit Class tracking - audit trail when customers go on/off hold</li>
+                        <li>State Liquor Authority integration - automatically flag delinquent licenses or inactive
+                            accounts</li>
+                        <li>Credit Hold triggers Sales Order Reviews - orders automatically stop for approval when
+                            credit issues exist</li>
+                    </ul>
+                    <p>When a customer's Credit Class changes, ALL their open orders automatically update - ensuring
+                        credit holds are enforced system-wide.</p>
+                </div>
+                <h2>Module 6: Perform Bank Reconciliation</h2>
+                <div class="module-card">
+                    <h3>Bank Account Reconciliation</h3>
+                    <div class="module-meta">
+                        <div class="module-meta-item">
+                            <i class="bi bi-clock"></i>
+                            <span>1 hour</span>
+                        </div>
+                        <div class="module-meta-item">
+                            <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                            <span>Critical for Finance</span>
+                        </div>
+                    </div>
+                    <h4>What you'll learn:</h4>
+                    <ul>
+                        <li>Importing bank statements</li>
+                        <li>Matching transactions automatically</li>
+                        <li>Manually matching bank entries</li>
+                        <li>Posting bank reconciliations</li>
+                    </ul>
+                    <a class="btn btn-sm btn-primary"
+                        href="https://learn.microsoft.com/en-us/training/modules/bank-reconciliation-dynamics-365-business-central/"
+                        target="_blank">Start Module</a>
+                </div>
+                <h2>Module 7: Use General Ledger Allocations</h2>
+                <div class="module-card">
+                    <h3>Automated Cost Allocation</h3>
+                    <div class="module-meta">
+                        <div class="module-meta-item">
+                            <i class="bi bi-clock"></i>
+                            <span>45 minutes</span>
+                        </div>
+                    </div>
+                    <h4>What you'll learn:</h4>
+                    <ul>
+                        <li>Setting up allocation accounts</li>
+                        <li>Creating allocation rules</li>
+                        <li>Distributing costs across dimensions</li>
+                        <li>Running allocation processes</li>
+                    </ul>
+                    <a class="btn btn-sm btn-primary"
+                        href="https://learn.microsoft.com/en-us/training/modules/general-ledger-allocations/"
+                        target="_blank">Start Module</a>
+                </div>
+                <div class="wine-callout">
+                    <div class="wine-callout-title">📝 365WineTrade Notes: Important Distinction</div>
+                    <p>⚠️ Note: Business Central's "General Ledger Allocations" (Module 7 above) is about distributing
+                        costs across GL accounts and dimensions.</p>
+                    <p>365WineTrade's "Inventory Allocations" is a completely different feature - it manages allocating
+                        physical inventory to customers, states, salespeople, or brands. Inventory Allocations creates
+                        commitments for who can purchase specific quantities of allocated items.</p>
+                    <p>Both features exist independently:</p>
+                    <ul>
+                        <li>GL Allocations = financial cost distribution (BC standard)</li>
+                        <li>Inventory Allocations = physical inventory reservation system (365WineTrade add-on)</li>
+                    </ul>
+                    <p>Your implementation team will cover Inventory Allocations separately during 365WineTrade
+                        training.</p>
+                </div>
+                <h2>Finance Skills Checklist</h2>
+                <p>After completing this track, you should be able to:</p>
+                <ul class="checklist">
+                    <li>Navigate and maintain the chart of accounts</li>
+                    <li>Create and configure dimensions for reporting</li>
+                    <li>Set up and use journal templates for different transaction types</li>
+                    <li>Configure posting groups to automate GL entries</li>
+                    <li>Process customer payments and apply them to invoices</li>
+                    <li>Process vendor payments and manage payables</li>
+                    <li>Import and reconcile bank statements</li>
+                    <li>Set up and run allocation processes</li>
+                    <li>Understand how transactions flow through the GL</li>
+                    <li>Generate financial reports with dimension analysis</li>
+                </ul>
+                <div class="wine-callout">
+                    <div class="wine-callout-title">📝 365WineTrade Notes: What Finance Needs to Know</div>
+                    <p>When transitioning to 365WineTrade, Finance will encounter these key processes:</p>
+                    <ul>
+                        <li>Chargeback Processing - generating vendor credit memos for Depletion Allowances, Bill Backs,
+                            and Bad Bottles</li>
+                        <li>Depletion Allowance Ledger Entries - tracking amounts owed by vendors for volume-based
+                            rebates</li>
+                        <li>Beverage Tax calculations - automated federal and state excise tax on alcoholic beverage
+                            sales</li>
+                        <li>Sample Billback processing - recovering costs from vendors for samples given to customers
+                        </li>
+                        <li>Allocation Journal posting - when inventory allocations create/consume reserved quantities
+                        </li>
+                    </ul>
+                    <p>These specialized transactions will have dedicated GL accounts in your chart of accounts. Your
+                        implementation team will configure the Chargeback Posting Setup to ensure proper GL flow.</p>
+                </div>
+                <h2>Next Steps for Finance Professionals</h2>
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-cart-fill"></i> Understand Trade Operations</h5>
+                                <p class="card-text">Learn how sales and purchasing transactions create the GL entries
                                     you'll be reconciling.</p>
-<a class="btn btn-sm btn-outline-primary" href="role-trade.html">View Trade Track</a>
-</div>
-</div>
-</div>
-<div class="col-md-6 mb-3">
-<div class="card h-100">
-<div class="card-body">
-<h5 class="card-title"><i class="bi bi-graph-up"></i> Master Power BI</h5>
-<p class="card-text">Take your financial reporting to the next level with advanced Power
+                                <a class="btn btn-sm btn-outline-primary" href="role-trade.html">View Trade Track</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-graph-up"></i> Master Power BI</h5>
+                                <p class="card-text">Take your financial reporting to the next level with advanced Power
                                     BI dashboards and analytics.</p>
-<a class="btn btn-sm btn-outline-primary" href="role-powerbi.html">View Power BI
+                                <a class="btn btn-sm btn-outline-primary" href="role-powerbi.html">View Power BI
                                     Track</a>
-</div>
-</div>
-</div>
-</div>
-<div class="page-navigation">
-<a class="nav-btn prev" href="role-admin.html">Admin &amp; Leadership Track</a>
-<a class="nav-btn next" href="role-trade.html">Trade/Sales Track</a>
-</div>
-</main>
-</div>
-</div>
-<footer class="site-footer">
-<div class="container">
-<div class="row">
-<div class="col-md-6">
-<p>© 2025 365WineTrade and Western Computer. All rights reserved.</p>
-<p class="mb-0">For support, contact your Western Computer implementation team.</p>
-</div>
-<div class="col-md-6 text-md-end">
-<p class="mb-0">Last updated: October 2025</p>
-</div>
-</div>
-</div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/navigation.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-navigation">
+                    <a class="nav-btn prev" href="role-admin.html">Admin &amp; Leadership Track</a>
+                    <a class="nav-btn next" href="role-trade.html">Trade/Sales Track</a>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>© 2025 365WineTrade and Western Computer. All rights reserved.</p>
+                    <p class="mb-0">For support, contact your Western Computer implementation team.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Last updated: October 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/navigation.js"></script>
 </body>
+
 </html>
