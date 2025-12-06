@@ -1,335 +1,293 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power BI Role Track - 365WineTrade QuickStart Guide</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Power BI Role Track - 365WineTrade QuickStart Guide</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="assets/css/custom.css" rel="stylesheet"/>
 </head>
-
 <body>
-
-    <header class="site-header">
-        <div class="container">
-            <h1>Business Central QuickStart Guide for Niner Wine Estates</h1>
-            <p class="subtitle">Curated for Niner by 365WineTrade</p>
-        </div>
-    </header>
-
-    <nav aria-label="breadcrumb">
-        <div class="container">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item">Role-Specific</li>
-                <li class="breadcrumb-item active" aria-current="page">Power BI</li>
-            </ol>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="row">
-
-            <nav class="col-md-3 col-lg-2 sidebar">
-                <div class="nav flex-column">
-                    <a class="nav-link" href="index.html">Home</a>
-                    <div class="nav-section-title">Learning Path</div>
-                    <a class="nav-link" href="round1-getting-started.html">Round I: Getting Started</a>
-                    <a class="nav-link" href="round2-core-skills.html">Round II: Core Skills</a>
-                    <a class="nav-link" href="round3-foundational.html">Round III: Foundational</a>
-                    <a class="nav-link" href="role-admin.html">Admin & Leadership</a>
-                    <a class="nav-link" href="role-finance.html">Finance</a>
-                    <a class="nav-link" href="role-trade.html">Trade/Sales</a>
-                    <a class="nav-link" href="role-warehouse.html">Warehouse</a>
-                    <a class="nav-link active" href="role-powerbi.html">Power BI</a>
-                    <div class="nav-section-title">Reference</div>
-                    <a class="nav-link" href="quick-reference.html">Quick Reference</a>
-                    <a class="nav-link" href="moving-to-365winetrade.html">Moving to 365WineTrade</a>
-                    <a class="nav-link" href="appendix.html">Appendix</a>
-                </div>
-            </nav>
-
-            <main class="col-md-9 col-lg-10 content-area">
-
-                <h1><i class="bi bi-graph-up"></i> Power BI Role Track</h1>
-
-                <p class="lead">Master business intelligence and data visualization with Power BI. These modules are
+<header class="site-header">
+<div class="container">
+<h1>Business Central QuickStart Guide for Niner Wine Estates</h1>
+<p class="subtitle">Curated for Niner by 365WineTrade</p>
+</div>
+</header>
+<nav aria-label="breadcrumb">
+<div class="container">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+<li class="breadcrumb-item">Role-Specific</li>
+<li aria-current="page" class="breadcrumb-item active">Power BI</li>
+</ol>
+</div>
+</nav>
+<div class="container">
+<div class="row">
+<nav class="col-md-3 col-lg-2 sidebar">
+<div class="nav flex-column">
+<a class="nav-link" href="index.html">Home</a>
+<div class="nav-section-title">Learning Path</div>
+<a class="nav-link" href="round1-getting-started.html">Round I: Getting Started</a>
+<a class="nav-link" href="round2-core-skills.html">Round II: Core Skills</a>
+<a class="nav-link" href="round3-foundational.html">Round III: Foundational</a>
+<a class="nav-link" href="role-admin.html">Admin &amp; Leadership</a>
+<a class="nav-link" href="role-finance.html">Finance</a>
+<a class="nav-link" href="role-trade.html">Trade/Sales</a>
+<a class="nav-link" href="role-warehouse.html">Warehouse</a>
+<a class="nav-link active" href="role-powerbi.html">Power BI</a>
+<div class="nav-section-title">Reference</div>
+<a class="nav-link" href="quick-reference.html">Quick Reference</a>
+<a class="nav-link" href="moving-to-365winetrade.html">Moving to 365WineTrade</a>
+<a class="nav-link" href="appendix.html">Appendix</a>
+</div>
+</nav>
+<main class="col-md-9 col-lg-10 content-area">
+<h1><i class="bi bi-graph-up"></i> Power BI Role Track</h1>
+<p class="lead">Master business intelligence and data visualization with Power BI. These modules are
                     essential for analysts, managers, and leaders who need to create dashboards, analyze trends, and
                     make data-driven decisions in the wine industry.</p>
-
-                <div class="alert alert-primary">
-                    <strong><i class="bi bi-lightbulb-fill"></i> Before You Start:</strong> Complete Rounds I-III and
+<div class="alert alert-primary">
+<strong><i class="bi bi-lightbulb-fill"></i> Before You Start:</strong> Complete Rounds I-III and
                     ideally at least one role-specific track. Understanding Business Central data structures will help
                     you create meaningful reports and dashboards.
                 </div>
-
-                <h2>Module 1: Get Started with Power BI</h2>
-
-                <div class="module-card">
-                    <h3>Introduction to Power BI</h3>
-                    <div class="module-meta">
-                        <div class="module-meta-item">
-                            <i class="bi bi-clock"></i>
-                            <span>1 hour</span>
-                        </div>
-                        <div class="module-meta-item">
-                            <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                            <span>Start Here</span>
-                        </div>
-                    </div>
-                    <h4>What you'll learn:</h4>
-                    <ul>
-                        <li>Understanding Power BI components (Desktop, Service, Mobile)</li>
-                        <li>Power BI's role in business intelligence</li>
-                        <li>How Power BI connects to Business Central</li>
-                        <li>Basic terminology and concepts</li>
-                    </ul>
-                    <a href="https://learn.microsoft.com/en-us/training/modules/get-started-with-power-bi/"
-                        class="module-link" target="_blank">
-                        <i class="bi bi-box-arrow-up-right"></i> Open Microsoft Learn Module
+<h2>Module 1: Get Started with Power BI</h2>
+<div class="module-card">
+<h3>Introduction to Power BI</h3>
+<div class="module-meta">
+<div class="module-meta-item">
+<i class="bi bi-clock"></i>
+<span>1 hour</span>
+</div>
+<div class="module-meta-item">
+<i class="bi bi-star-fill" style="color: #ffc107;"></i>
+<span>Start Here</span>
+</div>
+</div>
+<h4>What you'll learn:</h4>
+<ul>
+<li>Understanding Power BI components (Desktop, Service, Mobile)</li>
+<li>Power BI's role in business intelligence</li>
+<li>How Power BI connects to Business Central</li>
+<li>Basic terminology and concepts</li>
+</ul>
+<a class="module-link btn btn-sm btn-primary" href="https://learn.microsoft.com/en-us/training/modules/get-started-with-power-bi/" target="_blank">
+<i class="bi bi-box-arrow-up-right"></i> Open Microsoft Learn Module
                     </a>
-                </div>
-
-                <h2>Module 2: Get Data with Power BI Desktop</h2>
-
-                <div class="module-card">
-                    <h3>Connecting to Data Sources</h3>
-                    <div class="module-meta">
-                        <div class="module-meta-item">
-                            <i class="bi bi-clock"></i>
-                            <span>1 hour</span>
-                        </div>
-                    </div>
-                    <h4>What you'll learn:</h4>
-                    <ul>
-                        <li>Connecting Power BI to Business Central</li>
-                        <li>Connecting to other data sources (Excel, databases, web)</li>
-                        <li>Importing vs. DirectQuery</li>
-                        <li>Data source settings and security</li>
-                    </ul>
-                    <a href="https://learn.microsoft.com/en-us/training/modules/get-data/" class="module-link"
-                        target="_blank">
-                        <i class="bi bi-box-arrow-up-right"></i> Open Microsoft Learn Module
+</div>
+<h2>Module 2: Get Data with Power BI Desktop</h2>
+<div class="module-card">
+<h3>Connecting to Data Sources</h3>
+<div class="module-meta">
+<div class="module-meta-item">
+<i class="bi bi-clock"></i>
+<span>1 hour</span>
+</div>
+</div>
+<h4>What you'll learn:</h4>
+<ul>
+<li>Connecting Power BI to Business Central</li>
+<li>Connecting to other data sources (Excel, databases, web)</li>
+<li>Importing vs. DirectQuery</li>
+<li>Data source settings and security</li>
+</ul>
+<a class="module-link btn btn-sm btn-primary" href="https://learn.microsoft.com/en-us/training/modules/get-data/" target="_blank">
+<i class="bi bi-box-arrow-up-right"></i> Open Microsoft Learn Module
                     </a>
-                </div>
-
-                <h2>Module 3: Model Data in Power BI</h2>
-
-                <div class="module-card">
-                    <h3>Data Modeling and Relationships</h3>
-                    <div class="module-meta">
-                        <div class="module-meta-item">
-                            <i class="bi bi-clock"></i>
-                            <span>1 hour 30 minutes</span>
-                        </div>
-                        <div class="module-meta-item">
-                            <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                            <span>Critical for Power BI</span>
-                        </div>
-                    </div>
-                    <h4>What you'll learn:</h4>
-                    <ul>
-                        <li>Creating relationships between tables</li>
-                        <li>Understanding star schema design</li>
-                        <li>Creating calculated columns and measures</li>
-                        <li>Working with DAX formulas</li>
-                    </ul>
-                    <a href="https://learn.microsoft.com/en-us/training/modules/model-data-power-bi/"
-                        class="module-link" target="_blank">
-                        <i class="bi bi-box-arrow-up-right"></i> Open Microsoft Learn Module
+</div>
+<h2>Module 3: Model Data in Power BI</h2>
+<div class="module-card">
+<h3>Data Modeling and Relationships</h3>
+<div class="module-meta">
+<div class="module-meta-item">
+<i class="bi bi-clock"></i>
+<span>1 hour 30 minutes</span>
+</div>
+<div class="module-meta-item">
+<i class="bi bi-star-fill" style="color: #ffc107;"></i>
+<span>Critical for Power BI</span>
+</div>
+</div>
+<h4>What you'll learn:</h4>
+<ul>
+<li>Creating relationships between tables</li>
+<li>Understanding star schema design</li>
+<li>Creating calculated columns and measures</li>
+<li>Working with DAX formulas</li>
+</ul>
+<a class="module-link btn btn-sm btn-primary" href="https://learn.microsoft.com/en-us/training/modules/model-data-power-bi/" target="_blank">
+<i class="bi bi-box-arrow-up-right"></i> Open Microsoft Learn Module
                     </a>
-                </div>
-
-                <h2>Module 4: Create Visuals in Power BI</h2>
-
-                <div class="module-card">
-                    <h3>Building Reports and Visualizations</h3>
-                    <div class="module-meta">
-                        <div class="module-meta-item">
-                            <i class="bi bi-clock"></i>
-                            <span>1 hour</span>
-                        </div>
-                        <div class="module-meta-item">
-                            <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                            <span>Critical for Power BI</span>
-                        </div>
-                    </div>
-                    <h4>What you'll learn:</h4>
-                    <ul>
-                        <li>Creating charts, tables, and matrices</li>
-                        <li>Using slicers and filters effectively</li>
-                        <li>Formatting visuals for clarity</li>
-                        <li>Best practices for dashboard design</li>
-                    </ul>
-                    <a href="https://learn.microsoft.com/en-us/training/modules/visuals-in-power-bi/"
-                        class="module-link" target="_blank">
-                        <i class="bi bi-box-arrow-up-right"></i> Open Microsoft Learn Module
+</div>
+<h2>Module 4: Create Visuals in Power BI</h2>
+<div class="module-card">
+<h3>Building Reports and Visualizations</h3>
+<div class="module-meta">
+<div class="module-meta-item">
+<i class="bi bi-clock"></i>
+<span>1 hour</span>
+</div>
+<div class="module-meta-item">
+<i class="bi bi-star-fill" style="color: #ffc107;"></i>
+<span>Critical for Power BI</span>
+</div>
+</div>
+<h4>What you'll learn:</h4>
+<ul>
+<li>Creating charts, tables, and matrices</li>
+<li>Using slicers and filters effectively</li>
+<li>Formatting visuals for clarity</li>
+<li>Best practices for dashboard design</li>
+</ul>
+<a class="module-link btn btn-sm btn-primary" href="https://learn.microsoft.com/en-us/training/modules/visuals-in-power-bi/" target="_blank">
+<i class="bi bi-box-arrow-up-right"></i> Open Microsoft Learn Module
                     </a>
-                </div>
-
-                <h2>Module 5: Publish and Share in Power BI</h2>
-
-                <div class="module-card">
-                    <h3>Publishing Reports and Dashboards</h3>
-                    <div class="module-meta">
-                        <div class="module-meta-item">
-                            <i class="bi bi-clock"></i>
-                            <span>45 minutes</span>
-                        </div>
-                    </div>
-                    <h4>What you'll learn:</h4>
-                    <ul>
-                        <li>Publishing reports to Power BI Service</li>
-                        <li>Creating and sharing dashboards</li>
-                        <li>Setting up data refresh schedules</li>
-                        <li>Managing workspace access and permissions</li>
-                    </ul>
-                    <a href="https://learn.microsoft.com/en-us/training/modules/publish-share-power-bi/"
-                        class="module-link" target="_blank">
-                        <i class="bi bi-box-arrow-up-right"></i> Open Microsoft Learn Module
+</div>
+<h2>Module 5: Publish and Share in Power BI</h2>
+<div class="module-card">
+<h3>Publishing Reports and Dashboards</h3>
+<div class="module-meta">
+<div class="module-meta-item">
+<i class="bi bi-clock"></i>
+<span>45 minutes</span>
+</div>
+</div>
+<h4>What you'll learn:</h4>
+<ul>
+<li>Publishing reports to Power BI Service</li>
+<li>Creating and sharing dashboards</li>
+<li>Setting up data refresh schedules</li>
+<li>Managing workspace access and permissions</li>
+</ul>
+<a class="module-link btn btn-sm btn-primary" href="https://learn.microsoft.com/en-us/training/modules/publish-share-power-bi/" target="_blank">
+<i class="bi bi-box-arrow-up-right"></i> Open Microsoft Learn Module
                     </a>
-                </div>
-
-                <h2>Additional Resources: Power BI with Business Central</h2>
-
-                <div class="module-card">
-                    <h3>Enabling Power BI Integration</h3>
-                    <div class="module-meta">
-                        <div class="module-meta-item">
-                            <i class="bi bi-book"></i>
-                            <span>Article</span>
-                        </div>
-                    </div>
-                    <h4>What you'll learn:</h4>
-                    <ul>
-                        <li>Setting up Power BI integration in Business Central</li>
-                        <li>Embedding Power BI reports in BC pages</li>
-                        <li>Using pre-built BC reports and datasets</li>
-                    </ul>
-                    <a href="https://learn.microsoft.com/en-us/dynamics365/business-central/admin-powerbi-setup"
-                        class="module-link" target="_blank">
-                        <i class="bi bi-box-arrow-up-right"></i> Read Documentation
+</div>
+<h2>Additional Resources: Power BI with Business Central</h2>
+<div class="module-card">
+<h3>Enabling Power BI Integration</h3>
+<div class="module-meta">
+<div class="module-meta-item">
+<i class="bi bi-book"></i>
+<span>Article</span>
+</div>
+</div>
+<h4>What you'll learn:</h4>
+<ul>
+<li>Setting up Power BI integration in Business Central</li>
+<li>Embedding Power BI reports in BC pages</li>
+<li>Using pre-built BC reports and datasets</li>
+</ul>
+<a class="module-link btn btn-sm btn-primary" href="https://learn.microsoft.com/en-us/training/modules/get-started-with-power-bi/?WT.mc_id=powerbi_home_inproduct_introcard" target="_blank">
+<i class="bi bi-box-arrow-up-right"></i> Read Documentation
                     </a>
-                </div>
-
-                <div class="module-card">
-                    <h3>Working with Business Central Data in Power BI</h3>
-                    <div class="module-meta">
-                        <div class="module-meta-item">
-                            <i class="bi bi-book"></i>
-                            <span>Article</span>
-                        </div>
-                    </div>
-                    <h4>What you'll learn:</h4>
-                    <ul>
-                        <li>Using the Business Central connector</li>
-                        <li>Understanding BC data structure in Power BI</li>
-                        <li>Best practices for BC data models</li>
-                    </ul>
-                    <a href="https://learn.microsoft.com/en-us/dynamics365/business-central/admin-powerbi-overview"
-                        class="module-link" target="_blank">
-                        <i class="bi bi-box-arrow-up-right"></i> Read Documentation
+</div>
+<div class="module-card">
+<h3>Working with Business Central Data in Power BI</h3>
+<div class="module-meta">
+<div class="module-meta-item">
+<i class="bi bi-book"></i>
+<span>Article</span>
+</div>
+</div>
+<h4>What you'll learn:</h4>
+<ul>
+<li>Using the Business Central connector</li>
+<li>Understanding BC data structure in Power BI</li>
+<li>Best practices for BC data models</li>
+</ul>
+<a class="module-link btn btn-sm btn-primary" href="https://learn.microsoft.com/en-us/training/modules/get-started-with-power-bi/?WT.mc_id=powerbi_home_inproduct_introcard" target="_blank">
+<i class="bi bi-box-arrow-up-right"></i> Read Documentation
                     </a>
-                </div>
-
-                <div class="wine-callout">
-                    <div class="wine-callout-title">Wine Industry Power BI Reports</div>
-                    <p>Common Power BI dashboards and reports for wine businesses:</p>
-                    <ul>
-                        <li><strong>Sales Performance Dashboard:</strong> Track sales by region, varietal, price point,
+</div>
+<div class="wine-callout">
+<div class="wine-callout-title">Wine Industry Power BI Reports</div>
+<p>Common Power BI dashboards and reports for wine businesses:</p>
+<ul>
+<li><strong>Sales Performance Dashboard:</strong> Track sales by region, varietal, price point,
                             and sales rep</li>
-                        <li><strong>Inventory Aging Report:</strong> Monitor inventory age by vintage, identify
+<li><strong>Inventory Aging Report:</strong> Monitor inventory age by vintage, identify
                             slow-moving SKUs</li>
-                        <li><strong>Customer Analysis:</strong> Segment customers by purchasing patterns, identify wine
+<li><strong>Customer Analysis:</strong> Segment customers by purchasing patterns, identify wine
                             club trends</li>
-                        <li><strong>Allocation Tracking:</strong> Monitor allocated wine distribution and availability
+<li><strong>Allocation Tracking:</strong> Monitor allocated wine distribution and availability
                         </li>
-                        <li><strong>Profitability Analysis:</strong> Gross margin by product category, supplier, and
+<li><strong>Profitability Analysis:</strong> Gross margin by product category, supplier, and
                             customer</li>
-                        <li><strong>Producer Performance:</strong> Compare sales and profitability across wineries and
+<li><strong>Producer Performance:</strong> Compare sales and profitability across wineries and
                             suppliers</li>
-                        <li><strong>Warehouse Metrics:</strong> Bin utilization, picking efficiency, and fulfillment
+<li><strong>Warehouse Metrics:</strong> Bin utilization, picking efficiency, and fulfillment
                             KPIs</li>
-                        <li><strong>Vintage Performance:</strong> Compare sales and margins across different vintage
+<li><strong>Vintage Performance:</strong> Compare sales and margins across different vintage
                             years</li>
-                    </ul>
-                    <p class="mb-0"><strong>Tip:</strong> 365WineTrade can provide starter Power BI templates designed
+</ul>
+<p class="mb-0"><strong>Tip:</strong> 365WineTrade can provide starter Power BI templates designed
                         specifically for wineries.</p>
-                </div>
-
-                <h2>Power BI Skills Checklist</h2>
-
-                <p>After completing this track, you should be able to:</p>
-
-                <ul class="checklist">
-                    <li>Understand Power BI components and their roles</li>
-                    <li>Connect Power BI Desktop to Business Central data</li>
-                    <li>Import data from multiple sources (BC, Excel, databases)</li>
-                    <li>Create data models with relationships between tables</li>
-                    <li>Write basic DAX formulas for calculated measures</li>
-                    <li>Create effective visualizations (charts, tables, cards)</li>
-                    <li>Design professional dashboards with filters and slicers</li>
-                    <li>Publish reports to Power BI Service</li>
-                    <li>Share dashboards with appropriate permissions</li>
-                    <li>Schedule automatic data refresh</li>
-                    <li>Build wine-industry-specific reports (sales, inventory, allocations)</li>
-                </ul>
-
-                <h2>Next Steps for Power BI Users</h2>
-
-                <div class="row mt-4">
-                    <div class="col-md-6 mb-3">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title"><i class="bi bi-book"></i> Advanced Power BI Learning</h5>
-                                <p class="card-text">Continue your Power BI journey with advanced DAX, complex data
+</div>
+<h2>Power BI Skills Checklist</h2>
+<p>After completing this track, you should be able to:</p>
+<ul class="checklist">
+<li>Understand Power BI components and their roles</li>
+<li>Connect Power BI Desktop to Business Central data</li>
+<li>Import data from multiple sources (BC, Excel, databases)</li>
+<li>Create data models with relationships between tables</li>
+<li>Write basic DAX formulas for calculated measures</li>
+<li>Create effective visualizations (charts, tables, cards)</li>
+<li>Design professional dashboards with filters and slicers</li>
+<li>Publish reports to Power BI Service</li>
+<li>Share dashboards with appropriate permissions</li>
+<li>Schedule automatic data refresh</li>
+<li>Build wine-industry-specific reports (sales, inventory, allocations)</li>
+</ul>
+<h2>Next Steps for Power BI Users</h2>
+<div class="row mt-4">
+<div class="col-md-6 mb-3">
+<div class="card h-100">
+<div class="card-body">
+<h5 class="card-title"><i class="bi bi-book"></i> Advanced Power BI Learning</h5>
+<p class="card-text">Continue your Power BI journey with advanced DAX, complex data
                                     models, and enterprise deployment.</p>
-                                <a href="https://learn.microsoft.com/en-us/training/powerplatform/power-bi"
-                                    class="btn btn-sm btn-outline-primary" target="_blank">Explore Microsoft Learn</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title"><i class="bi bi-file-text"></i> Quick Reference Guide</h5>
-                                <p class="card-text">Access common formulas, shortcuts, and best practices for Business
+<a class="btn btn-sm btn-outline-primary btn-primary" href="https://learn.microsoft.com/en-us/training/powerplatform/power-bi" target="_blank">Explore Microsoft Learn</a>
+</div>
+</div>
+</div>
+<div class="col-md-6 mb-3">
+<div class="card h-100">
+<div class="card-body">
+<h5 class="card-title"><i class="bi bi-file-text"></i> Quick Reference Guide</h5>
+<p class="card-text">Access common formulas, shortcuts, and best practices for Business
                                     Central and Power BI.</p>
-                                <a href="quick-reference.html" class="btn btn-sm btn-outline-primary">View Quick
+<a class="btn btn-sm btn-outline-primary" href="quick-reference.html">View Quick
                                     Reference</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="page-navigation">
-                    <a href="role-warehouse.html" class="nav-btn prev">Warehouse Track</a>
-                    <a href="quick-reference.html" class="nav-btn next">Quick Reference</a>
-                </div>
-
-            </main>
-        </div>
-    </div>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2025 365WineTrade and Western Computer. All rights reserved.</p>
-                    <p class="mb-0">For support, contact your Western Computer implementation team.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0">Last updated: October 2025</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/navigation.js"></script>
-
+</div>
+</div>
+</div>
+</div>
+<div class="page-navigation">
+<a class="nav-btn prev" href="role-warehouse.html">Warehouse Track</a>
+<a class="nav-btn next" href="quick-reference.html">Quick Reference</a>
+</div>
+</main>
+</div>
+</div>
+<footer class="site-footer">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<p>© 2025 365WineTrade and Western Computer. All rights reserved.</p>
+<p class="mb-0">For support, contact your Western Computer implementation team.</p>
+</div>
+<div class="col-md-6 text-md-end">
+<p class="mb-0">Last updated: October 2025</p>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/navigation.js"></script>
 </body>
-
 </html>
